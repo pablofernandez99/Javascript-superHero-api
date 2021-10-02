@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#searchForm {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#searchForm input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #c7c7c7;
+}
+
+#searchForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #303030;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background-color: #424242;
+}
+
+.btn__change {
+    background-color: rgb(0, 150, 150);
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn__change:hover {
+    background-color:rgb(0, 172, 172) ;
+}
+
+.alert__danger {
+    padding: 5px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+    background-color: #f8d7da;
+    text-align: center;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul li {
+    width: 300px;
+    height: 450px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+ul li img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card {
+    line-height: 0;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(66, 66, 66, 0.85);
+    color: whitesmoke;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.description {
+    margin-top: 50px;
+}
+
+.description p {
+    margin-top: 30px;
+}
+@media only screen and (min-width: 800px) {
+    ul {
+        flex-flow: row wrap;
+    }
+
+    ul li {
+        margin: 15px;
+        width: 400px;
+    }
+}
