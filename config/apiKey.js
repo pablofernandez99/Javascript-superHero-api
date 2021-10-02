@@ -1,1 +1,2 @@
-export const apiKey = "381449043632073"
+export const apiKey = "Your Api Key, here!"
+// https://superheroapi.com/
