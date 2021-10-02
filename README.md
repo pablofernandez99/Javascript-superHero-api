@@ -1,1 +1,1 @@
-![demoSuperHero](./docs/superHero.jpg)
+![demoSuperHero](./docs/superhero.jpg)
